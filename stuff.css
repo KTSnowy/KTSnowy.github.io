@@ -37,7 +37,7 @@ p.title {
 
 p.body {
     font-family: "Lucida Console", Courier, monospace;
-    padding-left: 20px;
+    padding-left: auto;
     line-height: 30px;
     border-style: hidden; 
     background-color: #405060; 
@@ -45,7 +45,6 @@ p.body {
     margin-left: auto; 
     margin-right: auto;
     border-radius: 10px;
-    text-align: center;
 }
 
 img {
@@ -58,7 +57,3 @@ img {
     max-height: 50%;
 }
 
-@viewport{
-    zoom: auto;
-    width: device-width;
-}
