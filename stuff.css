@@ -37,7 +37,6 @@ p.title {
 
 p.body {
     font-family: "Lucida Console", Courier, monospace;
-    padding-left: auto;
     line-height: 30px;
     border-style: hidden; 
     background-color: #405060; 
