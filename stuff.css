@@ -59,6 +59,6 @@ img {
 }
 
 @viewport{
-    zoom: 1.0;
+    zoom: auto;
     width: device-width;
 }
