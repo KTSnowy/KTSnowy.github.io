@@ -45,6 +45,7 @@ p.body {
     margin-left: auto; 
     margin-right: auto;
     border-radius: 10px;
+    text-align: center;
 }
 
 img {
@@ -59,5 +60,5 @@ img {
 
 @viewport{
     zoom: 1.0;
-    width: extend-to-zoom;
+    width: device-width;
 }
