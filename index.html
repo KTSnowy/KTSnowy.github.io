@@ -1,18 +1,60 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta name=viewport content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  <title>Hewwo Woworld >w<</title>
-  <link rel="icon" href="Gabi.png" sizes="300x300" type="image/png"/>
-  <link rel="stylesheet" href="stuff.css">
- </head>
-     <body>
-        <div>
-      <pre><!--
-          --><p class="title">Website does a boop :3</p><!--
-          --><p class="body"><img src="Gabi.png"/><br>Hello, my name is Keith,<br>and this is my first attempt<br>at HTML and CSS<br><br></p><!--
-          --></pre>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="paw-icon/css/paw.css" rel="stylesheet">
+    <style>
+      body {background-color:#7b98b6;}
+      .navbar-custom {background-color:#141e28;}
+      .bg-custom {background-color:#141e28;}
+      
+    </style>
+    <title>Hewwo, welcome :3</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom" aria-label="top-navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand"><i class="fas fa-lg fa-paw"></i></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-end" id="top-navbar">
+        <div class="navbar-nav">
+          <span class="navbar-text mx-md-2"><i class="bi-at"></i>Social Media Links:</span>
+          <a class="nav-link" href="https://twitter.com/SnowballKeith"><i class="bi-tv-fill"></i>[Steam]</a>
+          <a class="nav-link" href="https://twitter.com/SnowballKeith"><i class="bi-twitter"></i>[Twitter]</a>
+          <a class="nav-link" href="https://twitter.com/SnowballKeith"><i class="bi-brush-fill"></i>[Furaffinity]</a>
+          <a class="nav-link" href="about.html"><i class="bi-code-slash"></i>[About]</a>
         </div>
-    </body>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="row my-3 mx-1">
+      <div class="col-md-4">
+        <div class="card bg-custom text-white" style="width: 400px;">
+          <img src="icon.png" class="card-img-top" alt="Hewwo?">
+          <div class="card-body">
+            <h2 class="card-title text-center">Hello, I'm Keith Taylor,</h2>
+            <p class="card-text text-center">and I'm just an arctic fox trying to learn web development with the help of bootstrap.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+ 
+
+    
+    <!--Bootstrap Bundle-->
+    <script src="js/bootstrap.bundle.js"></script>
+
+  </body>
 </html>
