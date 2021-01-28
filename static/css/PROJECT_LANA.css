@@ -19,7 +19,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 1;
-  box-shadow: inset -3px 0#1d7874;
+  box-shadow: inset -3px 0#607B7D;
 }
 
 @media (max-width: 767.98px) {
@@ -44,11 +44,11 @@ body {
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
-  color: #d8cbb7;
+  color: #D8CBC7;
 }
 
 .sidebar .nav-link.active {
-  color:#679289;
+  color:#A1FCDF;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -68,7 +68,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color:#071e22;
+  background-color: #1F1F24;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -80,9 +80,9 @@ body {
   width: 75px; 
   height: 43.30px;
   margin: 21.65px 0;
-  background-color:#d8cbc7;
-  border-left: solid 5px#679289;
-  border-right: solid 5px#679289;
+  background-color: #1F1F24;
+  border-left: solid 5px #A1FCDF;
+  border-right: solid 5px #A1FCDF; 
   animation: hexagon 3s infinite ease;
 }
 
@@ -102,14 +102,14 @@ body {
 
 .hexagon:before {
   top: -26.5165px;
-  border-top: solid 7.0711px#679289;
-  border-right: solid 7.0711px#679289;
+  border-top: solid 7.0711px #A1FCDF;
+  border-right: solid 7.0711px #A1FCDF;
 }
 
 .hexagon:after {
   bottom: -26.5165px;
-  border-bottom: solid 7.0711px#679289;
-  border-left: solid 7.0711px#679289;
+  border-bottom: solid 7.0711px #A1FCDF;
+  border-left: solid 7.0711px #A1FCDF;
 }
 
 @keyframes hexagon {
@@ -132,4 +132,31 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100;
+  }
+  
+  25% {
+    opacity: 100;
+  }
+  
+  50% {
+    opacity: 50;
+  }
+  
+  75% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
 }
