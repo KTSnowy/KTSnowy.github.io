@@ -18,88 +18,40 @@
   </head>
 <body>
     
-<div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-auto col-lg-auto d-md-block sidebar collapse" style="background-color: #1F1F24;">
-      <div class="position-sticky pt-3">
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-1 mt-2 mb-1 text-muted">
-          <span>Navigation</span>
-        </h6>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">
-              <span data-feather="home"></span>
-              Home
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./static/assets/LanaIcon.png" alt="" width="30" height="30" class="d-inline-block align-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <li class="nav-item dropdown bg-dark">
+            <a class="nav-link dropdown-toggle" href="#" id="Navigation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Navigation
             </a>
+            <ul class="dropdown-menu " aria-labelledby="Navigation">
+              <li><a class="dropdown-item active disabled" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">{'Lana'} bio</a></li>
+              <li><a class="dropdown-item" href="#">Telegram Bot</a></li>
+              <li><a class="dropdown-item" href="#">Discord Bot</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="user"></span>
-              {'Lana'} Bio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="send"></span>
-              Telegram Bot
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="headphones"></span>
-              Discord Bot
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active disabled" href="#">
-              <span data-feather="code"></span>
-              About
-            </a>
-          </li>
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-1 mt-4 mb-1 text-muted">
-          <span>Social Media Links</span>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.furaffinity.net/user/keithtaylor/">
-              <span data-feather="gitlab"></span>
-              Furaffinity
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/KTSnowy_">
-              <span data-feather="twitter"></span>
-              Twitter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://steamcommunity.com/id/keithtn">
-              <span data-feather="monitor"></span>
-              Steam
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/LanaTheProtogen/">
-              <span data-feather="github"></span>
-              GitHub
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://t.me/ktsnowy">
-              <span data-feather="send"></span>
-              Telegram
-            </a>
-          </li>
-        </ul>
-        <h6 class="sidebar-heading text-capitalize fixed-bottom px-1 mt-2 mb-2 text-muted">
-          <span>Project Lana<br>Copyright &#169; 2021<br>Keith Taylor<br><br>Powered by Bootstrap</span>
-        </h6>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <span class="navbar-text">
+            Social Media Links:
+          </span>
+          <a class="nav-link feather" target="_blank" rel="noopener noreferrer" href="https://www.furaffinity.net/user/keithtaylor/"><span data-feather="gitlab"></span>Furaffinity</a>
+          <a class="nav-link feather" target="_blank" rel="noopener noreferrer" href="https://twitter.com/KTSnowy_"><span data-feather="twitter"></span>Twitter</a>
+          <a class="nav-link feather" target="_blank" rel="noopener noreferrer" href="https://steamcommunity.com/id/keithtn"><span data-feather="monitor"></span>Steam</a>
+          <a class="nav-link feather" target="_blank" rel="noopener noreferrer" href="https://github.com/LanaTheProtogen/"><span data-feather="github"></span>GitHub</a>
+          <a class="nav-link feather" target="_blank" rel="noopener noreferrer" href="https://t.me/ktsnowy"><span data-feather="send"></span>Telegram</a>
+        </div>
       </div>
-    </nav>
-  </div>
-</div>
+    </div>
+  </nav>
 
 <section class="py-5 px-5 text-center container-fluid vh-100" style="background-image: url(./static/assets/BG.png);">
   <div class="row py-lg-5">
