@@ -3,6 +3,17 @@ body {
   background:#1F1F24;
 }
 
+.pixel-text {
+  font-family: 'VT323', monospace;
+  font-size: 70px;
+  background-color: #282830;
+}
+
+.card {
+  background-color: #282830;
+  border-color: #607B7D; 
+  border-width: 3px;
+}
 
 .navbar {
   box-shadow: inset 0px -3px #607B7D;
