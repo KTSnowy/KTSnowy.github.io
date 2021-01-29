@@ -5,8 +5,9 @@ body {
 
 .pixel-text {
   font-family: 'VT323', monospace;
-  font-size: 70px;
-  background-color: #282830;
+  font-size: 60px;
+  background-color: #1F1F24;
+  border-radius: 5px;
 }
 
 .card {
@@ -163,4 +164,4 @@ body {
     opacity: 0;
   }
 }
-}
+
