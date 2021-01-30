@@ -1,23 +1,29 @@
 body {
   font-size: .875rem;
-  background:#1F1F24;
+  background-image: url(../assets/TitleBG.png);
 }
 
 .pixel-text {
   font-family: 'VT323', monospace;
   font-size: 60px;
-  background-color: #1F1F24;
   border-radius: 5px;
+}
+
+.pixel-text-brand {
+  font-family: 'VT323', monospace;
+}
+
+.title-bg {
+  background-image:url(../assets/TitleBG.png)
 }
 
 .card {
   background-color: #282830;
-  border-color: #607B7D; 
-  border-width: 3px;
+  border-width: 0px;
 }
 
 .navbar {
-  box-shadow: inset 0px -3px #607B7D;
+  box-shadow: inset 0px -1px #A1FCDF;
   background-color: #1F1F24;
 }
 
@@ -28,7 +34,7 @@ body {
 
 .navbar .nav-link .feather {
   margin-right: 4px;
-  color: #D8CBC7;
+  color: #f7f9f9;
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
@@ -88,17 +94,18 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
+  color: #a1fcdf; 
+  font-size: 25px;
 }
 
 .hexagon {
-  display: inline-block;
   position: relative;
   width: 75px; 
   height: 43.30px;
+  background-color: #1f1f24;
   margin: 21.65px 0;
-  background-color: #1F1F24;
-  border-left: solid 5px #A1FCDF;
-  border-right: solid 5px #A1FCDF; 
+  border-left: solid 10px #a1fcdf;
+  border-right: solid 10px #a1fcdf;
   animation: hexagon 3s infinite ease;
 }
 
@@ -113,20 +120,21 @@ body {
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
-  left: 5.9835px;
+  left: 0.9835px;
 }
 
 .hexagon:before {
   top: -26.5165px;
-  border-top: solid 7.0711px #A1FCDF;
-  border-right: solid 7.0711px #A1FCDF;
+  border-top: solid 14.1421px #a1fcdf;
+  border-right: solid 14.1421px #a1fcdf;
 }
 
 .hexagon:after {
   bottom: -26.5165px;
-  border-bottom: solid 7.0711px #A1FCDF;
-  border-left: solid 7.0711px #A1FCDF;
+  border-bottom: solid 14.1421px #a1fcdf;
+  border-left: solid 14.1421px #a1fcdf;
 }
+
 
 @keyframes hexagon {
   0% {
