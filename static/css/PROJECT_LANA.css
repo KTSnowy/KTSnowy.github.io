@@ -78,6 +78,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.lana {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .hexagon {
   display: inline-block;
