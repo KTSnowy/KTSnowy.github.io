@@ -3,18 +3,13 @@ body {
   background-image: url(../assets/TitleBG.png);
 }
 
-.pixel-text {
-  font-family: 'VT323', monospace;
-  font-size: 60px;
-  border-radius: 5px;
-}
-
-.pixel-text-brand {
-  font-family: 'VT323', monospace;
-}
-
 .title-bg {
   background-image:url(../assets/TitleBG.png)
+}
+
+hr.divider {
+  height: 10px;
+  color: #607B7D;
 }
 
 .card {
@@ -23,8 +18,8 @@ body {
 }
 
 .navbar {
-  box-shadow: inset 0px -1px #A1FCDF;
-  background-color: #1F1F24;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .navbar .nav-link {
