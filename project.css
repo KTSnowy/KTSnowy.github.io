@@ -1,0 +1,153 @@
+img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+body {
+  box-shadow: inset 0 0 5rem #00000075;
+  background-image: url(./assets/TitleBG.png);
+}
+
+.card {
+  background-color: #282830;
+  border-width: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon-wrapper {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1F1F24;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.lana {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #a1fcdf; 
+  font-size: 25px;
+}
+
+.hexagon {
+  position: relative;
+  width: 75px; 
+  height: 43.30px;
+  background-color: #1f1f24;
+  margin: 21.65px 0;
+  border-left: solid 10px #a1fcdf;
+  border-right: solid 10px #a1fcdf;
+  animation: hexagon 3s infinite ease;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 53.03px;
+  height: 53.03px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 0.9835px;
+}
+
+.hexagon:before {
+  top: -26.5165px;
+  border-top: solid 14.1421px #a1fcdf;
+  border-right: solid 14.1421px #a1fcdf;
+}
+
+.hexagon:after {
+  bottom: -26.5165px;
+  border-bottom: solid 14.1421px #a1fcdf;
+  border-left: solid 14.1421px #a1fcdf;
+}
+
+
+@keyframes hexagon {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #282830; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  color: #a1fcdf;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
