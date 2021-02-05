@@ -151,3 +151,17 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.btn-secondary {
+  background-color: #282830;
+  color: #a1fcdf;
+  border-color: #a1fcdf;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #a1fcdf;
+  color: #282830;
+  border-color: #a1fcdf;
+  text-shadow: none;
+}
