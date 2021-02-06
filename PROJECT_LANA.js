@@ -26,13 +26,13 @@ recognition.onresult = (event) => {
   const current = event.resultIndex;
   const transcript = event.results[current][0].transcript;
   console.log(transcript);
-  if (transcript.includes('Hey Lana')) {
+  if (transcript.includes('hey lana')) {
     reply.textContent = `{ Hey it's me :3 }`;
   }
-  if (transcript.includes('Lana how are you')) {
+  if (transcript.includes('lana how are you')) {
     reply.textContent = `{ I'm alright, thanks for asking :3 }`;
   }
-  if (transcript.includes("Lana what are you")) {
+  if (transcript.includes("lana what are you")) {
     reply.textContent = `{ I'm a protogen ~w~ }`;
   }
   //lanaRead(transcript);
