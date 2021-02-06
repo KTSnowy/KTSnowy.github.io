@@ -15,60 +15,58 @@
     <title>{'Project Lana'} - About</title>
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
-    <!-- Sidebar thingy -->
-        <div id="sidenav" class="sidenav text-start">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">[&times;]</a>
-          <a href="index.html" style="color: #a1fcdf;">Home</a>
-          <a href="#" style="color: #a1fcdf;">About</a>
-          <a href="#" style="color: #a1fcdf;">Bots</a>
-          <a href="links.html" style="color: #a1fcdf;">Links</a>
+<!-- Sidebar thingy -->
+    <div id="sidenav" class="sidenav text-start">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">[&times;]</a>
+      <a href="index.html" style="color: #a1fcdf;">Home</a>
+      <a href="#" style="color: #a1fcdf;">About</a>
+      <a href="#" style="color: #a1fcdf;">Bots</a>
+      <a href="links.html" style="color: #a1fcdf;">Links</a>
+    </div>
+    <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <section class="mb-auto">
+        <div>
+          <a href="#" onclick="openNav()" class="float-start mb-0 mx-2 mt-1 btn btn-secondary fw-bold"><span data-feather="more-horizontal"></span></a>
         </div>
-        <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-          <section class="mb-auto">
             <div>
-              <a href="#" onclick="openNav()" class="float-start mb-0 mx-2 mt-1 btn btn-secondary fw-bold"><span data-feather="more-horizontal"></span></a>
-            </div>
-                <div>
-              <h3 class="float-start ms-2 mb-0"><img src="./assets/PL_LOGO.svg" alt="Project Lana Logo" height="45"></h3>
-            </div>
-            <div>
-              <h3 class="float-start mb-0 mt-1 ms-2" style="color: #a1fcdf;">{'Project Lana'}</h3>
-            </div>
-          </section>
-          <section class="container-fluid px-5 text-center">
-            <div class="row">
-              <div class="col-lg-5 col-md-8 mx-auto">
-                  <div class="card">
-                      <div class="card-body">
-                        <h3 class="card-title text-white">About us</h3>
-                        <h5 class="card-subtitle mb-3 text-muted">Keith Taylor and Mint.</h5>
-                        <p class="card-subtitle text-white">Keith Taylor is a web developer and Mint is a graphic designer.</p>
-                        <p class="card-subtitle text-white">This project was made with the help of my wonderful boyfriend, love you so much ❤️</p>
-                      </div>
+          <h3 class="float-start ms-2 mb-0"><img src="./assets/PL_LOGO.svg" alt="Project Lana Logo" height="45"></h3>
+        </div>
+        <div>
+          <h3 class="float-start mb-0 mt-1 ms-2" style="color: #a1fcdf;">{'Project Lana'}</h3>
+        </div>
+      </section>
+      <section class="container-fluid px-5 text-center">
+        <div class="row">
+          <div class="col-lg-5 col-md-8 mx-auto">
+              <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title text-white">About us</h3>
+                    <h5 class="card-subtitle mb-3 text-muted">Keith Taylor and Mint.</h5>
+                    <p class="card-subtitle text-white">Keith Taylor is a web developer and Mint is a graphic designer.</p>
+                    <p class="card-subtitle text-white">This project was made with the help of my wonderful boyfriend, love you so much ❤️</p>
                   </div>
               </div>
-            </div>
-          </section>
-          <section class="mt-auto text-white-50">
-            <p class="float-md-end" style="color: #a1fcdf;">Copyright © Keith Taylor and Mint.</p>
-          </section>
+          </div>
         </div>
-
-        <!-- Bootstrap JS and Feather Icons // REQUIRED // -->
-        <script src="./bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-        <script src="./PROJECT_LANA.js"></script>
-  <script>feather.replace()</script>
-  <div class="hexagon-wrapper">
-    <h1 class="lana">
-      <span>PL_</span>
-    </h1>
-    <span class="hexagon"></span>
-  </div>
-  <script>
-      $(window).on("load",function(){
-        $(".hexagon-wrapper").delay(500).fadeOut("slow");
-      });
-  </script>
-</body>
+      </section>
+      <section class="mt-auto text-white-50">
+        <p class="float-md-end" style="color: #a1fcdf;">Copyright © Keith Taylor and Mint.</p>
+      </section>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="./PROJECT_LANA.js"></script>
+    <script>feather.replace()</script>
+<div class="hexagon-wrapper">
+  <h1 class="lana">
+    <span>PL_</span>
+  </h1>
+  <span class="hexagon"></span>
+</div>
+<script>
+    $(window).on("load",function(){
+      $(".hexagon-wrapper").delay(500).fadeOut("slow");
+    });
+</script>
+  </body>
 </html>
