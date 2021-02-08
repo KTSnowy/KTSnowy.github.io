@@ -30,6 +30,20 @@
 			const cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 
+			const matPLane = new THREE.MeshPhongMaterial( { color: 0x608099 } );
+			const geoPLane = new THREE.PlaneGeometry( 10, 10 );
+			const mshPLane = new THREE.Mesh( geoPLane, matPLane );
+			mshPLane.rotation.x = - Math.PI * 0.5;
+
+			mshPLane.receiveShadow = true;
+			mshPLane.position.set( 0, - 0.9, 0 );
+			scene.add( mshPLane );
+
+			const grid = new THREE.GridHelper( 10, 10 )
+			grid.position.set( 0, -0.8, 0 )
+
+			scene.add( grid );
+
 			const dirLight = new THREE.DirectionalLight( 0xffffff, 0.7 );
 				dirLight.position.set( -5, 4, 6 ).normalize();
 				scene.add( dirLight );
@@ -38,6 +52,7 @@
 			scene.add( light );
 
 			camera.position.z = 5;
+			camera.position.y = 2;
 
 			const controls = new OrbitControls( camera, renderer.domElement );
 				//controls.addEventListener( 'change', render ); // use only if there is no animation loop
