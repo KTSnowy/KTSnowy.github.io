@@ -34,7 +34,7 @@
 				dirLight.position.set( -5, 4, 6 ).normalize();
 				scene.add( dirLight );
 
-			const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+			const light = new THREE.AmbientLight( 0x404040, 0.7 ); // soft white light
 			scene.add( light );
 
 			camera.position.z = 5;
