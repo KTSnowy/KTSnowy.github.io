@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="all">
+		<meta name="description" content="Simple three.js cube test">
+		<meta name="author" content="Keith Taylor, Mint">
+		<meta name="keywords" content="Project, Lana, Project Lana, Protogen, app">
+		<link rel="canonical" href="https://www.projectlana.app/"/>
+		<link rel="icon" href="./assets/PL_LOGO.svg"/>
+		<title>{'Project Lana'} - Lana-colored cube</title>
+		<style>
+			body { margin: 0; background-color: black;}
+		</style>
+	</head>
+	<body>
+		<script type="module">
+			import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+			import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
+			const scene = new THREE.Scene();
+			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			const renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			const geometry = new THREE.BoxGeometry();
+			const material = new THREE.MeshPhongMaterial( { color: 0xa1fcdf, specular: 0xa1fcdf, shininess: 10 } );
+			const cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			const dirLight = new THREE.DirectionalLight( 0xffffff, 0.7 );
+				dirLight.position.set( -5, 4, 6 ).normalize();
+				scene.add( dirLight );
+
+			const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+			scene.add( light );
+
+			camera.position.z = 5;
+
+			const controls = new OrbitControls( camera, renderer.domElement );
+				//controls.addEventListener( 'change', render ); // use only if there is no animation loop
+				controls.minDistance = 1;
+				controls.maxDistance = 10;
+				controls.enableDamping = true;
+				controls.enablePan = false;
+
+			const animate = function () {
+				requestAnimationFrame( animate );
+
+				controls.update();
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+	</body>
+</html>
