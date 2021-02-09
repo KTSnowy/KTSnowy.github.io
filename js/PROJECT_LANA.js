@@ -26,7 +26,9 @@ recognition.onresult = (event) => {
   const current = event.resultIndex;
   const transcript = event.results[current][0].transcript;
   console.log(transcript);
-  if (transcript.includes('hey Lana')) {
+  reply.textContent = `{ ${transcript} }`;
+
+  /*if (transcript.includes('hey Lana')) {
     reply.textContent = `{ Hey it's me :3 }`;
     //lanaRead(`Hey it's me`);
   }
@@ -37,7 +39,7 @@ recognition.onresult = (event) => {
   if (transcript.includes("Lana what are you")) {
     reply.textContent = `{ I'm a protogen ~w~ }`;
     //lanaRead(`I'm a protogen`);
-  }
+  }*/
 };
 
 button.addEventListener('click', () => {
