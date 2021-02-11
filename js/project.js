@@ -1,16 +1,18 @@
+$(window).on("load",function(){
+  $(".hexagon-wrapper").delay(500).fadeOut("slow");
+});
+
+feather.replace();
+
 const button = document.querySelector(".LANA");
 const reply = document.querySelector(".LANA-REPLY");
 
 function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("sidenav").style.width = "210px";
   }
   
 function closeNav() {
     document.getElementById("sidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
   }
 
 
