@@ -5,8 +5,9 @@ img {
   border-radius: 10px;
 }
 
+
 body {
-  box-shadow: inset 0 0 5rem #00000075;
+  /*box-shadow: inset 0 0 5rem #00000075;*/
   background-image: url(../assets/TitleBG.png);
   overflow-y: hidden;
 }
@@ -160,6 +161,7 @@ body {
 .btn-secondary {
   background-color: #282830;
   color: #a1fcdf;
+  border-width: 0px;
   border-color: #a1fcdf;
   border-radius: 10px;
 }
