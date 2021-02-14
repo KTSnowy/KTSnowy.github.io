@@ -173,3 +173,60 @@ body {
   border-color: #a1fcdf;
   text-shadow: none;
 }
+
+#heart { 
+  overflow-x: hidden;
+  width: 300px; height: 300px;
+  text-align: center;
+  transform: scale(0.95);
+}
+
+#heart::before {
+  content: 'lindoo';
+  color: #5a3234;
+  position: absolute;
+  top: 40px;
+  width: 150px; height: 240px;
+  background: #ef9598;
+  border-radius: 150px 150px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+  content: 'fofooo';
+  color: #5a3234;
+  position: absolute;
+  top: 40px;
+  width: 150px; height: 240px;
+  background: #ef9598;
+  border-radius: 150px 150px 0 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+#heart i::before {
+  content: 'Guilherme <3';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 35%; left: 0;
+  font-style: normal;
+  color: #5a3234;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+#heart {
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1.74);
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+  animation-name: heartbeat; 
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(0.95); }
+  50%      { transform: scale(1.00); }
+}
