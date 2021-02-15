@@ -9,10 +9,12 @@ const reply = document.querySelector(".LANA-REPLY");
 
 function openNav() {
     document.getElementById("sidenav").style.width = "210px";
+    document.getElementById("sidenav-shadow").style.width = "100%";
   }
   
 function closeNav() {
     document.getElementById("sidenav").style.width = "0";
+    document.getElementById("sidenav-shadow").style.width = "0";
   }
 
 
