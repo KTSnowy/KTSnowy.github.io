@@ -27,20 +27,12 @@
     </div>
     <div id="sidenav-shadow" class="sidenav-shadow" onclick="closeNav()"></div>
     <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <section class="container-fluid px-1 text-center mb-auto">
-        <div class="row">
-          <div class="col-auto ms-0">
-            <div class="card">
-                <div class="card-body">
-                  <div>
-                    <a href="#" onclick="openNav()" class="float-start mb-0 btn btn-secondary fw-bold"><span data-feather="menu"></span></a>
-                    <h3 class="float-start ms-2 mb-0" style="color: #a1fcdf;">{'Project Lana'}</h3>
-                  </div>
-                </div>
-            </div>
-          </div>
+      <nav class="navbar navbar-dark mb-auto" id="navbar-top">
+        <div class="container-fluid justify-content-start">
+          <a href="#" onclick="openNav()" class="mb-0 btn btn-secondary fw-bold"><span data-feather="menu"></span></a>
+          <a class="navbar-brand mx-auto pt-0" style="color: #a1fcdf;">{'Project Lana'}</a>
         </div>
-      </section>
+      </nav>
       <section class="container-fluid px-5 text-center">
         <div class="row">
           <div class="col-lg-5 col-md-8 mx-auto">
@@ -57,17 +49,13 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid px-1 text-center mt-auto">
-        <div class="row">
-          <div class="col-auto ms-auto me-0">
-              <div class="card">
-                  <div class="card-body">
-                    <p class="mb-0" style="color: #a1fcdf;">Copyright © Keith Taylor and <a id="mint" href="morzin.html">Mint.</a></p>
-                  </div>
-              </div>
-          </div>
+      <nav class="navbar navbar-dark mt-auto ms-auto" id="navbar-footer">
+        <div class="container-fluid justify-content-end">
+          <span class="navbar-text">
+            <p class="mb-0" style="color: #a1fcdf;">Copyright © Keith Taylor and <a id="mint" href="morzin.html">Mint.</a></p>
+          </span>
         </div>
-      </section>
+      </nav>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>

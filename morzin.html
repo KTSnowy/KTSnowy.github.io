@@ -17,7 +17,7 @@
   <body class="d-flex h-100 text-center text-white bg-dark">
 <!-- Sidebar thingy -->
     <div id="sidenav" class="sidenav text-start">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">[<span data-feather="x"></span>]</a>
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">[<span data-feather="x"></span>]</a>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="#">Bots</a>
@@ -25,47 +25,35 @@
       <a href="AVR.html">{'Lana'}</a>
       <a href="links.html">Links</a>
     </div>
-	<div id="sidenav-shadow" class="sidenav-shadow" onclick="closeNav()"></div>
+	  <div id="sidenav-shadow" class="sidenav-shadow" onclick="closeNav()"></div>
     <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <section class="container-fluid px-1 text-center mb-auto">
-        <div class="row">
-          <div class="col-auto ms-0">
-            <div class="card">
-                <div class="card-body">
-                  <div>
-                    <a href="#" onclick="openNav()" class="float-start mb-0 btn btn-secondary fw-bold"><span data-feather="menu"></span></a>
-                    <h3 class="float-start ms-2 mb-0" style="color: #a1fcdf;">{'Project Lana'}</h3>
-                  </div>
-                </div>
-            </div>
-          </div>
+      <nav class="navbar navbar-dark mb-auto" id="navbar-top">
+        <div class="container-fluid justify-content-start">
+          <a href="#" onclick="openNav()" class="mb-0 btn btn-secondary fw-bold"><span data-feather="menu"></span></a>
+          <a class="navbar-brand mx-auto pt-0" style="color: #a1fcdf;">{'Project Lana'}</a>
         </div>
-      </section>
+      </nav>
       <section class="container-fluid px-5 text-center">
         <div class="row">
           <div class="col-auto mx-auto">
               <div class="card" style="border-color: #ef9598; border-width: 2px;">
                   <div class="card-body">
-					<h3 class="card-title text-white mb-2">Meu amorzinho</h3>
-					<h5 class="card-subtitle mb-2 text-muted">Feliz dia dos namorados</h5>
-					<h5 class="card-subtitle mb-3 text-muted">Te amo muitooo</h5>
-					<pre id="heart"><i></i></pre>
+					          <h3 class="card-title text-white mb-2">Meu amorzinho</h3>
+					          <h5 class="card-subtitle mb-2 text-muted">Feliz dia dos namorados</h5>
+					          <h5 class="card-subtitle mb-3 text-muted">Te amo muitooo</h5>
+					          <pre id="heart"><i></i></pre>
                   </div>
               </div>
           </div>
         </div>
       </section>
-      <section class="container-fluid px-1 text-center mt-auto">
-        <div class="row">
-          <div class="col-auto ms-auto me-0">
-              <div class="card">
-                  <div class="card-body">
-                    <p class="mb-0" style="color: #a1fcdf;">Copyright © Keith Taylor and Mint.</p>
-                  </div>
-              </div>
-          </div>
+      <nav class="navbar navbar-dark mt-auto ms-auto" id="navbar-footer">
+        <div class="container-fluid justify-content-end">
+          <span class="navbar-text">
+            <p class="mb-0" style="color: #a1fcdf;">Copyright © Keith Taylor and <a id="mint" href="morzin.html">Mint.</a></p>
+          </span>
         </div>
-      </section>
+      </nav>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
