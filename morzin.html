@@ -1,68 +1,88 @@
 <!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all">
-    <meta name="description" content="Welcome to Project Lana's homepage.">
-    <meta name="author" content="Keith Taylor, Mint">
-    <meta name="keywords" content="Project, Lana, Project Lana, Protogen, app">
-    <link rel="canonical" href="https://www.projectlana.app/">
-    <link rel="icon" href="assets/PL_LOGO.svg">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/project.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <title>{'Project Lana'} - <3<3<3<3<3</title>
-  </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-<!-- Sidebar thingy -->
-    <div id="sidenav" class="sidenav text-start">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">[<span data-feather="x"></span>]</a>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Bots</a>
-      <a href="#">Mintzinho</a>
-      <a href="AVR.html">{'Lana'}</a>
-      <a href="links.html">Links</a>
-    </div>
-	  <div id="sidenav-shadow" class="sidenav-shadow" onclick="closeNav()"></div>
-    <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <nav class="navbar navbar-dark mb-auto" id="navbar-top">
-        <div class="container-fluid justify-content-start">
-          <a href="#" onclick="openNav()" class="mb-0 btn btn-secondary fw-bold"><span data-feather="menu"></span></a>
-          <a class="navbar-brand mx-auto pt-0" style="color: #a1fcdf;">{'Project Lana'}</a>
+<html lang="en">
+<head>
+  <!-- <meta> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="all">
+  <meta name="description" content="Welcome to Project Lana's homepage.">
+  <meta name="author" content="Keith Taylor, Mint">
+  <meta name="keywords" content="Project, Lana, Project Lana, Protogen, app">
+  <!-- <link> -->
+  <link href="https://www.projectlana.app/" rel="canonical">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="css/tailwind-custom.css" rel="stylesheet">
+  <link href="css/heart.css" rel="stylesheet">
+  <link href="assets/favicon.svg" rel="icon">
+  <!-- <scripts> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/project.js"></script> 
+  <!-- <title> -->
+  <title>{'Project Lana'} - Homepage</title>
+</head>
+<body>
+  <!-- <nav> content -->
+  <nav id="nav">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="flex-1 flex items-center items-stretch sm:justify-start justify-center">
+          <!-- <nav> branding -->
+          <div class="flex-shrink-0 flex items-center text-gray-300">
+            <img class="h-8 w-auto" src="assets/favicon.svg" alt="Project Lana">Home
+          </div>
+          <!-- <nav> links -->
+          <div class="ml-4 sm:ml-6">
+            <div class="flex space-x-2 sm:space-x-4">
+              <a href="#" class="text-gray-300 lanabtn-hover hover:text-white px-3 py-2 rounded-xl text-sm font-medium">About</a>
+              <a href="#" class="text-gray-300 lanabtn-hover hover:text-white px-3 py-2 rounded-xl text-sm font-medium">Contact us</a>
+            </div>
+          </div>
         </div>
-      </nav>
-      <section class="container-fluid px-5 text-center">
-        <div class="row">
-          <div class="col-auto mx-auto">
-              <div class="card" style="border-color: #ef9598; border-width: 2px;">
-                  <div class="card-body">
-					          <h3 class="card-title text-white mb-2">Meu amorzinho</h3>
+      </div>
+    </div>
+  </nav>
+  <!-- <main> content -->
+  <main id="main">
+    <div class="min-h-screen text-center py-10">
+      <!-- <card 1> content -->
+      <div class="w-full max-w-6xl rounded-xl lana-bg shadow-xl p-10 lg:p-15 mx-auto text-gray-300 relative md:text-left">
+        <div class="md:flex items-center -mx-10">
+          <div class="h-full md:h-1/2 px-10 mb-10 md:mb-0">
+            <div class="relative">
+              <pre id="heart"><i></i></pre>
+            </div>
+          </div>
+          <div class="h-full sm:h-1/2 px-10">
+            <div class="mb-10">
+              <h1 class="font-bold uppercase text-2xl mb-5">Meu amorzinho</h1>
+              <p class="text-sm mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos, voluptatum dolorum! Laborum blanditiis consequatur, voluptates, sint enim fugiat saepe, dolor fugit, magnam explicabo eaque quas id quo porro dolorum facilis...</p>
+              <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos, voluptatum dolorum! Laborum blanditiis consequatur, voluptates, sint enim fugiat saepe, dolor fugit, magnam explicabo eaque quas id quo porro dolorum facilis...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- <footer> content -->
+  <footer id="footer" class="pt-2">
+    <div class="pt-2">
+      <div id="divider" class="flex pb-4 px-3 m-auto pt-2 border-t text-gray-300 text-sm flex-col md:flex-row max-w-7xl">
+        <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">Copyright © 2021 Keith Taylor and Mint. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <!-- <hexagon> loading animation -->
+	<div class="hexagon-wrapper">
+    <h1 class="lana"><span>PL_</span></h1>
+    <span class="hexagon"></span>
+  </div>
+</body>
+</html>
+					          
+                    
+                    
+                    
+                    <h3 class="card-title text-white mb-2">Meu amorzinho</h3>
 					          <h5 class="card-subtitle mb-2 text-muted">Feliz dia dos namorados</h5>
 					          <h5 class="card-subtitle mb-3 text-muted">Te amo muitooo</h5>
 					          <pre id="heart"><i></i></pre>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      <nav class="navbar navbar-dark mt-auto ms-auto" id="navbar-footer">
-        <div class="container-fluid justify-content-end">
-          <span class="navbar-text">
-            <p class="mb-0" style="color: #a1fcdf;">Copyright © Keith Taylor and <a id="mint" href="morzin.html">Mint.</a></p>
-          </span>
-        </div>
-      </nav>
-    </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="js/project.js"></script>
-    <div class="hexagon-wrapper">
-      <h1 class="lana">
-        <span>PL_</span>
-      </h1>
-      <span class="hexagon"></span>
-    </div>
-  </body>
-</html>
